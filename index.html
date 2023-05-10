@@ -36,19 +36,19 @@
     <body>
         <div class="relative">
             <nav data-aos="zoom-in" class="fixed z-20 w-full p-6 lg:bg-transparent">
-                <div id="nav" class="px-5 py-3 bg-transparent flex justify-between items-center flex-row rounded-lg shadow-lg">
+                <div id="nav" class="flex flex-row items-center justify-between px-5 py-3 bg-transparent rounded-lg shadow-lg">
                     <button class="hidden lg:block" style="width: 56px; height: 56px;" onclick="onHandleClick('lg')">
                         <img class="w-full rounded-full" src="./assets/logo.png" alt="image" />
                     </button>
-                    <div class="flex justify-between flex-col w-full lg:hidden">
-                        <div class="flex justify-between items-center w-full">
+                    <div class="flex flex-col justify-between w-full lg:hidden">
+                        <div class="flex items-center justify-between w-full">
                             <button style="width: 56px; height: 56px;" onclick="onHandleClick('sm')">
                                 <img class="w-full rounded-full" src="./assets/logo.png" alt="image" />
                             </button>
                             <!-- <button class="px-5 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800">Dark</button> -->
                         </div>
                         <div class="flex flex-col lg:hidden lg:items-start">
-                            <div id="dropdown-sm" onclick="link()" style="display: none;" class="flex-col mt-5 items-start hidden gap-8 lg:flex-row lg:flex">
+                            <div id="dropdown-sm" onclick="link()" style="display: none;" class="flex-col items-start hidden gap-8 mt-5 lg:flex-row lg:flex">
                                 <a href="#" class="hover:text-blue-700">Beranda</a>
                                 <a href="gallery.html" class="hover:text-blue-700">Gallery</a>
                                 <a href="#about" class="hover:text-blue-700">Tentang Kami</a>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     
-                    <div class="lg:flex hidden flex-col gap-8 lg:items-center lg:flex-row mr-10">
+                    <div class="flex-col hidden gap-8 mr-10 lg:flex lg:items-center lg:flex-row">
                         <div id="dropdown-lg" style="display: none;" class="flex-col items-start hidden gap-8 lg:flex-row lg:flex">
                             <a href="#" class="hover:text-blue-700">Beranda</a>
                             <a href="gallery.html" class="hover:text-blue-700">Gallery</a>
@@ -71,7 +71,7 @@
                             <a href="#sponsor" class="hover:text-blue-700">Sponsor</a>
                         </div>
                     </div>
-                    <!-- <div class="h-full lg:block hidden">
+                    <!-- <div class="hidden h-full lg:block">
                         <button type="button" onclick="darkmode()" id="button_darkmode" class="px-5 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800">Dark</button>
                     </div> -->
                 </div>
@@ -91,22 +91,22 @@
                 </div>
             </div>
             <img class="w-full h-auto" src="assets/YMII.jpeg" alt="image description" />
-            <img data-aos="fade-down" class="lg:hidden w-48 h-48 mb-2 mt-5 mx-auto rounded-full block" src="./assets/logo.png" alt="image description" />
-            <h1 data-aos="zoom-in" class="mb-4 text-4xl text-center mt-10 lg:hidden font-extrabold leading-none tracking-tight text-red-600 block md:text-5xl lg:text-6xl dark:text-white">PONDOK BELAJAR MUTIARA IHSAN</h1>
+            <img data-aos="fade-down" class="block w-48 h-48 mx-auto mt-5 mb-2 rounded-full lg:hidden" src="./assets/logo.png" alt="image description" />
+            <h1 data-aos="zoom-in" class="block mt-10 mb-4 text-4xl font-extrabold leading-none tracking-tight text-center text-red-600 lg:hidden md:text-5xl lg:text-6xl dark:text-white">PONDOK BELAJAR MUTIARA IHSAN</h1>
             <div class="flex justify-center">
-                <a data-aos="fade-left" href="gallery.html" class="items-center justify-center block lg:hidden px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg lg:flex lg:inline-flex hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <a data-aos="fade-left" href="gallery.html" class="items-center justify-center block px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg lg:hidden lg:flex lg:inline-flex hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     GALLERY&nbsp;
                     <i class="fa fa-arrow-right"></i>
                 </a>
             </div>
-            <hr class="mt-10 block lg:hidden"/>
+            <hr class="block mt-10 lg:hidden"/>
         </section>
         
         <section class="overflow-hidden" id="about">
             <div class="w-full p-10 bg-white dark:bg-blue-600">
                 <h1 data-aos="zoom-in" class="py-5 text-3xl text-center text-black">Motivasi, Visi & Misi</h1>
                 <div class="flex mt-10">
-                    <img data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#foto-bersama1" class="hidden h-auto max-w-lg mr-10 transition-all duration-300 rounded-lg cursor-pointer lg:block filter grayscale hover:grayscale-0" src="assets/foto-bersama-1.jpg" alt="image ruang belajar" />
+                    <img data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#foto-bersama1" class="hidden h-auto max-w-lg mr-10 transition-all duration-300 rounded-lg cursor-pointer md:block filter grayscale hover:grayscale-0" src="assets/foto-bersama-1.jpg" alt="image ruang belajar" />
 
                     <div class="fixed top-0 left-0 hidden w-full h-full overflow-x-hidden overflow-y-auto outline-none modal fade" id="foto-bersama1" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
                         <div class="relative w-auto pointer-events-none modal-dialog modal-lg">
@@ -215,7 +215,7 @@
 
         <section class="overflow-x-hidden" id="sekretariat">
             <div class="w-full p-10 bg-blue-200">
-                <h1 data-aos="zoom-in" class="py-5 text-3xl text-center text-black">Sekretariat</h1>
+                <h1 class="py-5 text-3xl text-center text-black">Sekretariat</h1>
 
                 <section data-aos="zoom-out" class="my-10 splide" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
@@ -336,57 +336,57 @@
                 <h1 data-aos="zoom-in" class="py-5 text-3xl text-center text-black">Pembelajaran</h1>
                 
                 <div class="flex flex-row flex-wrap justify-center gap-10 mt-5">
-                    <div data-aos="zoom-in" data-aos-duration="700" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Alquran
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="500" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Aqidah
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="500" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Fiqh
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="200" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Tajwid
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="300" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             B.arab
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="400" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             B.indonesia
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="400" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Siroh
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="400" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Alkhlaq
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="400" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             MTK
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="400" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             B.inggris
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="400" class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
+                    <div class="px-5 py-3 bg-blue-400 rounded-lg cursor-default hover:bg-blue-500">
                         <p>
                             Doa harian
                         </p>
@@ -410,7 +410,7 @@
                     </div>
                     
                     <div class="flex flex-col w-full mb-3">
-                        <label for="message" class="text-black dark:text-white">Message</label>
+                        <label for="message" class="text-black texthover:bg-blue-500 hover:bg-blue-500 dark:text-white">Message</label>
                         <textarea id="pesan" onchange="onHandleChange(this.name, this.value)" type="text" name="text" class="p-4 bg-gray-200 border border-gray-100 rounded-lg"></textarea>
                     </div>
 
@@ -437,7 +437,7 @@
         <footer>
             <div class="w-full px-10 pt-10 pb-5 bg-blue-300">
                 <div class="flex flex-col justify-between lg:flex-row">
-                    <div class="w-full mb-10 lg:w-1/2">
+                    <div class="w-full mb-6 lg:w-1/2">
                         <a data-aos="fade-right" href="#" class="text-2xl text-red-700 hover:text-blue-700">
                             Yayasan Mutiara Ihsan Indonesia (YMII)
                         </a>
@@ -450,8 +450,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col w-full lg:w-1/2 lg:flex-row">
-                        <div class="w-full mb-10">
+                    <div class="flex w-full sm:flex-col md:flex-row lg:w-1/2 lg:flex-row">
+                        <div class="w-full mb-6">
                             <h1 data-aos="fade-right" class="mb-6 text-xl">
                                 Link
                             </h1>
